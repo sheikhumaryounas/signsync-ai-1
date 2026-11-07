@@ -83,7 +83,7 @@ export const en = {
   'home.translate': 'Translate',
   'home.modeSign': 'Sign to text',
   'home.modeSpeak': 'Speak to sign',
-  'home.modeType': 'Type to sign',
+  'home.modeType': 'Text to sign',
   'home.modeChat': 'Conversation',
   'home.preview': 'Preview',
   'home.recent': 'Recent',

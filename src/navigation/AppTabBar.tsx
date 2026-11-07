@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
     boxShadow: shadow.bar,
   },
   item: { flex: 1, alignItems: 'center', gap: 3, minHeight: 48 },
-  pill: { width: 52, height: 30, borderRadius: 15, alignItems: 'center', justifyContent: 'center' },
+  pill: { width: 40, height: 26, borderRadius: 13, overflow: 'hidden', alignItems: 'center', justifyContent: 'center' },
   pillOn: { backgroundColor: palette.tealSoft },
   label: { fontSize: 12, lineHeight: 16 },
 });

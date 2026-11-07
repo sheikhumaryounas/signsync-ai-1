@@ -15,7 +15,7 @@ type PreviewRoute = 'SignRecognition' | 'VoiceSign' | 'TextToSign' | 'Bidirectio
 const modes: { route: PreviewRoute; icon: IconName; label: StringKey }[] = [
   { route: 'SignRecognition', icon: 'hand-left-outline', label: 'home.modeSign' },
   { route: 'VoiceSign', icon: 'mic-outline', label: 'home.modeSpeak' },
-  { route: 'TextToSign', icon: 'keypad-outline', label: 'home.modeType' },
+  { route: 'TextToSign', icon: 'text-outline', label: 'home.modeType' },
   { route: 'BidirectionalChat', icon: 'chatbubbles-outline', label: 'home.modeChat' },
 ];
 
