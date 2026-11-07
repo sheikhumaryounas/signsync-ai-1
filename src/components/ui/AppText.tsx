@@ -32,7 +32,7 @@ function containsUrdu(children: React.ReactNode): boolean {
 function urduStyle(variant: TextVariant, scale: number, align?: TextStyle['textAlign']): TextStyle {
   const base = StyleSheet.flatten(type[variant]);
   // Nastaliq reads smaller than Latin at the same point size, so small text gets a floor.
-  const size = Math.max(base.fontSize ?? 14, 13.5) * scale;
+  const size = Math.max(base?.fontSize ?? 14, 13.5) * scale;
   return {
     fontFamily: strongVariants.includes(variant) ? fonts.urduSemibold : fonts.urdu,
     fontSize: variant === 'label' ? size + 2 : size,

@@ -149,7 +149,7 @@ export default function HistoryScreen() {
           );
         }}
         ListEmptyComponent={
-          state === 'loading' ? null : state === 'error' ? (
+          state === 'loading' ? undefined : state === 'error' ? (
             <View style={styles.empty}>
               <EmptyState icon="cloud-offline-outline" title={t('history.loadError')} message={t('error.network')} />
               <Button title={t('common.retry')} variant="ghost" onPress={() => load('reset')} />

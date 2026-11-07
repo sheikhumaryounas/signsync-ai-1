@@ -43,7 +43,7 @@ export default function BidirectionalChatScreen({ navigation }: Props) {
   const { t, lang } = useI18n();
   const { row, start, end, isRTL } = useDirection();
   const openedAt = useRef(Date.now());
-  const scroller = useRef<ScrollView>(null);
+  const scroller = useRef<React.ComponentRef<typeof ScrollView>>(null);
   const timers = useRef<ReturnType<typeof setTimeout>[]>([]);
   const [view, setView] = useState<'chat' | 'guide'>('chat');
   const [side, setSide] = useState<Side>('signer');
